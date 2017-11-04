@@ -9,8 +9,9 @@ Had a funny dream and decided to throw this together.. literally no real need or
 ### Prerequisites
 
 * virtualenv installed `pip install virtualenv`
-* pybuilder installed `pip install pybuilder`
-* setup project `pyb install`
+* python setup.py
+* export PYTHONPATH=$(pyb print_module_path -Q | tail -n1)
+* export PATH=$(pyb -Q print_scripts_path | tail -n1):$PATH
 
 ### Usage
 
