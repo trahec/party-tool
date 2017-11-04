@@ -19,4 +19,8 @@ class PartyHandler():
             rendered_template = loaded_template.render(**config)
             return rendered_template
 
+        if config['custom_party_dir']:
+            raise Exception("Apologies, custom parties are not supported right now."
+                            "Please enjoy our default party until further notice!")
+
 

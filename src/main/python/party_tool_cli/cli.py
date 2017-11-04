@@ -31,12 +31,10 @@ def create(name, custom_party):
     config['custom_party_dir'] = custom_party
 
     party_handler = PartyHandler()
-    party = party_handler.create_party(config)
-
-    print("_____________\n")
-    print party
-    print("\n_____________")
-
-
-
-
+    try:
+        party = party_handler.create_party(config)
+        print("_____________\n")
+        print party
+        print("\n_____________")
+    except Exception as e:
+        print e
