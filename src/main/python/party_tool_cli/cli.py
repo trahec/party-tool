@@ -23,7 +23,7 @@ def main():
               help="Name of your party")
 @click.option('--custom-party',
               help="path to directory which contains files for a custom party\
-                    Default party '.' ")
+                    If you do not set this, you will enjoy our default party!")
 def create(name, custom_party):
     print("Configuring party...")
     config = {}
